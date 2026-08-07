@@ -27,22 +27,6 @@ export default function App() {
     }
   }, [activeView]);
 
-  // Add Disqus comment count script globally as requested
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = '//sg-home-hub.disqus.com/count.js';
-    script.id = 'dsq-count-scr';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      const existingScript = document.getElementById('dsq-count-scr');
-      if (existingScript) {
-        document.body.removeChild(existingScript);
-      }
-    };
-  }, []);
-
   return (
     <div className="min-h-screen flex flex-col font-body">
       <Navbar activeView={activeView} setActiveView={setActiveView} />
