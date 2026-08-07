@@ -23,7 +23,7 @@ export function DisqusComments() {
     const existingCountScript = document.getElementById('dsq-count-scr');
     if (!existingCountScript) {
       const countScript = document.createElement('script');
-      countScript.src = '//sg-home-hub.disqus.com/count.js';
+      countScript.src = 'https://sg-home-hub.disqus.com/count.js';
       countScript.id = 'dsq-count-scr';
       countScript.async = true;
       (document.head || document.body).appendChild(countScript);
