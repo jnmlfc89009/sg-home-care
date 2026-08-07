@@ -42,11 +42,11 @@ export default function App() {
         
         <Pricing />
         <Corporate />
+        <DisqusComments identifier="sghomecare-main" title="SGHomeCare Home Safety Hub Discussion" />
       </main>
 
       <Footer />
-      
-      <DisqusComments />
     </div>
   );
 }
+
