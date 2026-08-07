@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import { useState, useEffect } from 'react';
-import { DiscussionEmbed } from 'disqus-react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Features } from './components/Features';
@@ -11,6 +10,7 @@ import { GrantChecker } from './components/GrantChecker';
 import { Pricing } from './components/Pricing';
 import { Corporate } from './components/Corporate';
 import { Footer } from './components/Footer';
+import { DisqusComments } from './components/DisqusComments';
 
 export default function App() {
   const [activeView, setActiveView] = useState('home');
@@ -59,19 +59,7 @@ export default function App() {
         <Pricing />
         <Corporate />
         
-        <section className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-display font-bold text-slate-900 mb-8 text-center">Community Discussion</h2>
-            <DiscussionEmbed
-              shortname="sg-home-hub"
-              config={{
-                url: window.location.href,
-                identifier: 'home-page',
-                title: 'SGHomeCare Home Page',
-              }}
-            />
-          </div>
-        </section>
+        <DisqusComments />
       </main>
 
       <Footer />
