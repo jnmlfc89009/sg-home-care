@@ -1,0 +1,8 @@
+{
+  "name": "SGHomeCare",
+  "description": "Elderly Home Safety Hub providing age-in-place solutions, home audits, and smart monitoring in Singapore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
