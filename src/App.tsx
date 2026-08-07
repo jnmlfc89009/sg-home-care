@@ -42,11 +42,11 @@ export default function App() {
         
         <Pricing />
         <Corporate />
-        
-        <DisqusComments />
       </main>
 
       <Footer />
+      
+      <DisqusComments />
     </div>
   );
 }
