@@ -17,7 +17,9 @@ export function Navbar({ activeView, setActiveView }: NavbarProps) {
     { id: 'grants', label: 'Check Grants' },
     { id: 'pricing', label: 'Plans & Pricing' },
     { id: 'corporate', label: 'For Partners' },
+    { id: 'contact', label: 'Contact & Discussion' },
   ];
+
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white border-b border-secondary/20 shadow-sm">
